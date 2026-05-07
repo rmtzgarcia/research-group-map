@@ -4,22 +4,24 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Research Group — World Map</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"/>
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     body{
-      font-family:Georgia,serif;
-      background:#f5f3ef;
+      font-family:'Lato',sans-serif;
+      font-weight:300;
+      background:transparent;
       display:flex;
       flex-direction:column;
       align-items:center;
-      padding:2rem 1rem 2.5rem;
-      min-height:100vh;
+      padding:1rem 1rem 1.5rem;
       color:#1a1a1a;
     }
     h1{
+      font-family:'Lato',sans-serif;
+      font-weight:300;
       font-size:1.1rem;
-      font-weight:normal;
       letter-spacing:.1em;
       text-transform:uppercase;
       color:#666;
@@ -35,11 +37,12 @@
     #map{width:100%;}
     .legend{
       display:flex;gap:24px;margin-top:1rem;
-      justify-content:center;font-size:13.5px;color:#555;
+      justify-content:center;font-size:16px;color:#555;
+      font-family:'Lato',sans-serif;font-weight:300;
     }
     .legend-item{display:flex;align-items:center;gap:8px;}
     .dot{
-      width:16px;height:16px;border-radius:50%;
+      width:14px;height:14px;border-radius:50%;
       border:2px solid #fff;
       box-shadow:0 1px 4px rgba(0,0,0,.2);
     }
@@ -51,7 +54,7 @@
 </head>
 <body>
 
-<h1>Where We Come From</h1>
+<h1>Research Group &mdash; Where We Come From</h1>
 <div id="map-wrap"><div id="map"></div></div>
 <div class="legend">
   <div class="legend-item">
@@ -79,7 +82,7 @@
 ============================================================ -->
 <script>
 var members = [
-  { name: "Gabriel A. Maciel",  role: "Postdoc",        city: "Curitiba, PR", lat: -25.42, lon: -49.26,  type: "Alumni" },
+  { name: "Member Name",  role: "PhD student",        city: "Mexico City",  lat: 19.43,  lon: -99.13,  type: "current" },
   { name: "Member Name",  role: "Postdoc",             city: "Madrid",        lat: 40.42,  lon:  -3.70,  type: "current" },
   { name: "Alumni Name",  role: "Former PhD student",  city: "Berlin",        lat: 52.52,  lon:  13.40,  type: "alumni"  },
   { name: "Alumni Name",  role: "Former Postdoc",      city: "New York",      lat: 40.71,  lon: -74.01,  type: "alumni"  },
